@@ -9,7 +9,7 @@ const app = express(); // Instanciamos Express
 dotenv.config();
 const PORT = process.env.PORT || 3010; // Puerto del servidor en donde se ejecutará la API
 
-app.use(express.json()); // Middleware para parsear el cuerpo de las solicitudes en formato JSON. Tambien conocido como middleware de aplicación.
+app.use(express.json()); // Middleware para parsear el cuerpo de las solicitudes en formato JSON. Tambien conocido como middleware de aplicacion.
 app.use("/warehouse", routerWarehouse); // Middleware para manejar las rutas de la API. Tambien conocido como middleware de montaje o de enrutamiento.
 app.use("/shipments", routerShipment);
 app.use("/drivers",routerDriver);
